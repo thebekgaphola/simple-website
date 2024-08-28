@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-indigo-500 p-4 text-white flex justify-between items-center">
+        <div class="text-xl font-bold">My Shop</div>
+        <nav>
+            <a href="#" class="px-3 hover:underline">Home</a>
+            <a href="#" class="px-3 hover:underline">Products</a>
+            <a href="#" class="px-3 hover:underline">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-4">
+        <div class="flex justify-between items-center mb-4">
+            <div>
+                <label for="sort" class="mr-2">Sort by:</label>
+                <select id="sort" class="p-2 bg-white border rounded">
+                    <option value="name">Name</option>
+                    <option value="price">Price</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product List -->
+        <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Products will be injected here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-500 p-4 text-white text-center">
+        <p>&copy; 2024 My Shop. All rights reserved.</p>
+        <p>Contact us at: contact@myshop.com</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
